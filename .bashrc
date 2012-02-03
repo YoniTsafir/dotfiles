@@ -16,4 +16,4 @@ export FLEX_HOME=/Applications/Adobe\ Flash\ Builder\ 4.6/sdks/4.6.0
 export ANT_OPTS="-Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
 export DROPBOX=/Users/yonits/joytunes_dropbox/Dropbox/
 
-export PATH=${PATH}:${FLEX_HOME}/bin
+export PATH=/Users/yonits/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:${FLEX_HOME}/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/:${PATH}
