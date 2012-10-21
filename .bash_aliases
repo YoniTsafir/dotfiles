@@ -11,3 +11,7 @@ alias l='ll'
 alias gitpulltherightway='git stash && git pull --rebase && git stash pop'
 alias generate_atlas='~/sdks/sparrow-framework/sparrow/util/atlas_generator/generate_atlas.rb -m 2048x2048 `find . ! -path "*/old/*" -name "*.png"`'
 alias play_duster_rec='~/bin/play -traw -esigned -b16 -r16000 -c1'
+
+appdir() {
+    cd "$(ps ax | grep $1.app | grep -v grep | grep -v AppCode | awk '{print "\""$5" "$6" "$7"\""} ' | sed "s/$1\.app\/$1//g")"
+}
