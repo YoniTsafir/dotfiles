@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/yonits/dev/recorder/.settings'
+let g:netrw_dirhist_2='/Users/yonits/Downloads/iAd1.2'
+let g:netrw_dirhist_3='/Users/yonits/dev/ANE_play/flash/lib/release'
+let g:netrw_dirhist_4='/Users/yonits/joytunes_dropbox/Dropbox/baloola/019 Piano Duster/grannyThrowShort'
+let g:netrw_dirhist_5='/Users/yonits/.ssh'
+let g:netrw_dirhist_6='/Users/yonits/dev/joytunes/PianoDustBuster/PianoDustBuster/PianoDustBuster.xcdatamodel'
+let g:netrw_dirhist_7='/Users/yonits/dev/personal/PeaceConnector/.settings'
+let g:netrw_dirhist_8='/Users/yonits/dev/joytunes/CoreJoyTunes/Localizations/en.lproj'
+let g:netrw_dirhist_9='/Users/yonits/.ssh'
