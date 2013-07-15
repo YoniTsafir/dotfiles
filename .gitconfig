@@ -39,6 +39,8 @@
     file-blame = !git ls-files | xargs -n1 -i{} git log -1 --pretty=format:\"%ci {}\" -- {}
     amend = commit --amend -C HEAD
 
+    su = submodule update
+    sui = submodule update --init
 
 [core]
     whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
