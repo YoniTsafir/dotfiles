@@ -15,5 +15,6 @@ export EDITOR=vim
 export FLEX_HOME=/Applications/Adobe\ Flash\ Builder\ 4.6/sdks/4.6.0
 export ANT_OPTS="-Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
 export DROPBOX=/Users/yonits/joytunes_dropbox/Dropbox/
+export TRANSPORTER_HOME=`xcode-select --print-path`/../Applications/Application\ Loader.app/Contents/MacOS/itms/bin
 
-export PATH=/opt/local/bin:/opt/local/sbin:/Users/yonits/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:${FLEX_HOME}/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Users/yonits/sdks/Sparrow-Framework/sparrow/util/atlas_generator:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/MacOS/itms/bin:${PATH}
+export PATH=/opt/local/bin:/opt/local/sbin:/Users/yonits/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:${FLEX_HOME}/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Users/yonits/sdks/Sparrow-Framework/sparrow/util/atlas_generator:/Applications/Xcode.app/Contents/Developer/usr/bin:${TRANSPORTER_HOME}:${PATH}
