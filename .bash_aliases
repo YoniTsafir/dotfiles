@@ -19,3 +19,7 @@ alias gst='git status'
 appdir() {
     cd "$(ps ax | grep $1.app | grep -v grep | grep -v AppCode | awk '{print "\""$5" "$6" "$7"\""} ' | sed "s/$1\.app\/$1//g")"
 }
+
+pdf2png() {
+    sips -s format png --out "${1%%.*}.png" "$1"
+}
