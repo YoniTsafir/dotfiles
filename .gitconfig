@@ -42,6 +42,8 @@
     su = submodule update
     sui = submodule update --init
 
+    seturl = remote set-url origin
+
 [core]
     whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
 	editor = vim
