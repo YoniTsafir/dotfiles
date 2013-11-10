@@ -21,5 +21,8 @@ appdir() {
 }
 
 pdf2png() {
-    sips -s format png --out "${1%%.*}.png" "$1"
+    # Requires ImageMagick and ghostscript (available via brew install)
+    pdf=$1
+    png=${1%%.pdf}.png
+    convert -density 300 "$pdf" -resize 1154 -append "$png"
 }
