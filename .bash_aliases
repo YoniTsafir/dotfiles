@@ -17,7 +17,8 @@ alias gps='git push'
 alias gst='git status'
 
 appdir() {
-    cd "$(ps ax | grep $1.app | grep -v grep | grep -v AppCode | awk '{print "\""$5" "$6" "$7"\""} ' | sed "s/$1\.app\/$1//g")"
+    dir=$(ps ax | grep $1.app | grep -v grep | grep -v AppCode | awk '{print "\""$5" "$6" "$7"\""} ' | sed "s/$1\.app\/$1//g")
+    eval cd "$dir"
 }
 
 pdf2png() {
