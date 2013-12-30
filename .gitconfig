@@ -44,6 +44,9 @@
 
     seturl = remote set-url origin
 
+    rbc = rebase --continue
+    rba = rebase --abort
+
 [core]
     whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
 	editor = vim
