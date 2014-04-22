@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/yonits/dev/joytunes/PianoDustBuster/.git/modules/submodules/DTCoreText/.git'
-let g:netrw_dirhist_2='/Users/yonits/.dropbox-two/Dropbox/Yoni/itms/achievements/Piano_Dust_Buster_V1.itmsp'
-let g:netrw_dirhist_3='/Users/yonits/.dropbox-two/Dropbox/Yoni/itms/IAP_only_energy/Piano_Dust_Buster_Demo.itmsp'
-let g:netrw_dirhist_4='/Users/yonits/dev/joytunes/PianoPlatform/submodules/PP_DLC/dev/1.8 songs/RadioHits/Bad Romance'
-let g:netrw_dirhist_5='/Users/yonits/dev/joytunes/PianoPlatform/submodules/PP_DLC/dev/1.8 songs/RadioHits/Bad Romance/Bad Romance_AMinor'

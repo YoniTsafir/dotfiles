@@ -51,4 +51,5 @@ au BufNewFile,BufRead *.as              set filetype=actionscript
 autocmd FileType actionscript set omnifunc=actionscriptcomplete#CompleteAS
 autocmd FileType actionscript :set dictionary=$HOME/vimfiles/dict/actionscript.dict
 
-
+" pathgen
+execute pathogen#infect()
