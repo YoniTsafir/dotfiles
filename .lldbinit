@@ -1,0 +1,1 @@
+type summary add --python-script "top=valobj.GetChildMemberWithName('top').GetValue(); return float(top) / 3.0" JTPseudoRational
