@@ -52,6 +52,9 @@
 	editor = vim
 	autocrlf = input
 
+[status]
+    submoduleSummary = true
+
 [color]
     pager = true
     ui = auto
