@@ -82,3 +82,7 @@
 
 [help]
 	autocorrect = 1
+
+[diff "localizablestrings"]
+    textconv = "iconv -f utf-16 -t utf-8"
+
