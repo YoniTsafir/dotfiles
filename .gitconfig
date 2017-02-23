@@ -82,6 +82,10 @@
 
 [help]
 	autocorrect = 1
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
 
 [diff "localizablestrings"]
     textconv = "iconv -f utf-16 -t utf-8"
