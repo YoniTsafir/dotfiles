@@ -38,3 +38,9 @@ alias gm='git merge --no-ff'
 alias gst='git status'
 
 alias gitpulltherightway='git stash && gpl && git stash pop'
+
+# JoyTunes s3 download
+
+function s3() {
+	aws s3 cp ${1/https:\/\/joytunes-dev.s3.amazonaws.com/s3:\/\/joytunes-dev} .
+}
