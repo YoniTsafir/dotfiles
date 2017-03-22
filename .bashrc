@@ -20,6 +20,9 @@ export ANDROID_HOME=~/Library/Android/sdk/
 
 export PATH=/opt/local/bin:/opt/local/sbin:/Users/yonits/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:${FLEX_HOME}/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Users/yonits/sdks/Sparrow-Framework/sparrow/util/atlas_generator:/Applications/Xcode.app/Contents/Developer/usr/bin:${TRANSPORTER_HOME}:${ANDROID_HOME}/ndk-bundle/:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${PATH}
 
+# prefer local over system python libs
+export PYTHONPATH=${HOME}/Library/Python/2.7/lib/python/site-packages:${PYTHONPATH}
+
 # added by travis gem
 [ -f /Users/yonits/.travis/travis.sh ] && source /Users/yonits/.travis/travis.sh
 
