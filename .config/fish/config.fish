@@ -31,7 +31,7 @@ function fish_prompt
 	set_color normal
 	printf '@'
 	set_color yellow
-	printf '%s' (hostname)	
+	printf '%s' (hostname -s)	
 	set_color $fish_color_cwd
 	printf ' %s' (prompt_pwd)
 	set_color normal
