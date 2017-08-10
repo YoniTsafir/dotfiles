@@ -16,31 +16,7 @@ Plugin 'dag/vim-fish'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-
 """"""""
-set shiftround
-set hlsearch showmatch
-set softtabstop=4
-set tabstop=4
-set shiftwidth=4
-set shiftround
-set textwidth=120
-set colorcolumn=+0        " Highlight the textwidth column (req. VIM 7.3)
-set ignorecase
-set smartcase               " Be case insensitive as long as search-string is lowercase
-set expandtab
-set autoindent smartindent
-set incsearch
-set wildmenu 
-set wildignore=*.pyc
-set modeline
-set nocompatible
-set number
-set paste
-filetype plugin on
-filetype indent on
-syntax on
 
 " Pylint integration (Ctrl+P to manually scan, automatically started when saving files )
 " Requires Pylint plugin, http://www.vim.org/scripts/script.php?script_id=891
@@ -74,3 +50,27 @@ autocmd FileType actionscript :set dictionary=$HOME/vimfiles/dict/actionscript.d
 
 " pathgen
 execute pathogen#infect()
+
+""""""""
+set shiftround
+set hlsearch showmatch
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+set shiftround
+set textwidth=120
+set colorcolumn=+0        " Highlight the textwidth column (req. VIM 7.3)
+set ignorecase
+set smartcase               " Be case insensitive as long as search-string is lowercase
+set autoindent smartindent
+set incsearch
+set wildmenu 
+set wildignore=*.pyc
+set modeline
+set nocompatible
+set number
+set paste
+filetype plugin on
+filetype indent on
+syntax on
+set expandtab
