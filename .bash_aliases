@@ -44,3 +44,16 @@ alias gitpulltherightway='git stash && gpl && git stash pop'
 function s3() {
 	aws s3 cp ${1/https:\/\/joytunes-dev.s3.amazonaws.com/s3:\/\/joytunes-dev} .
 }
+
+# pip as a user
+PIP=$(which pip)
+pip() {
+  if [ "$1" = "install" -o "$1" = "bundle" ]; then
+    cmd="$1"
+    shift
+    $PIP $cmd --user $@
+  else
+    $PIP $@
+  fi
+}
+
