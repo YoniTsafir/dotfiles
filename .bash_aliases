@@ -46,14 +46,13 @@ function s3() {
 }
 
 # pip as a user
-PIP=$(which pip)
 pip() {
-  if [ "$1" = "install" -o "$1" = "bundle" ]; then
+  if [[ -z "$VIRTUAL_ENV" && ("$1" = "install" || "$1" = "bundle") ]]; then
     cmd="$1"
     shift
-    $PIP $cmd --user $@
+    $(which pip) $cmd --user $@
   else
-    $PIP $@
+    $(which pip) $@
   fi
 }
 
