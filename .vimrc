@@ -1,6 +1,7 @@
 set shell=/bin/bash
 
 """""""" Vundle
+if isdirectory(expand('~/.vim/bundle/Vundle.vim/.git'))
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,6 +17,7 @@ Plugin 'dag/vim-fish'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+endif
 """"""""
 
 " Pylint integration (Ctrl+P to manually scan, automatically started when saving files )
