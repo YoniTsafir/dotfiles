@@ -56,9 +56,9 @@ execute pathogen#infect()
 """"""""
 set shiftround
 set hlsearch showmatch
-set softtabstop=4
-set tabstop=4
-set shiftwidth=4
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
 set shiftround
 set textwidth=120
 set colorcolumn=+0        " Highlight the textwidth column (req. VIM 7.3)

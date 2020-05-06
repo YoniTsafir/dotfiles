@@ -1,6 +1,6 @@
 alias ..='cd ..'
 alias x='chmod +x'
-alias realias='source ~/.bash_aliases'
+alias realias='source ~/.bash_aliases; if [ -f ~/.google_bash_aliases ]; then source ~/.google_bash_aliases; fi'
 alias cp='cp -i'
 alias rm='rm -i'
 alias mv='mv -i'
@@ -56,3 +56,13 @@ pip() {
   fi
 }
 
+function video_to_gif {
+  start_offset=$1
+  length=$2
+  video=$3
+  ffmpeg -ss ${start_offset} -t $length -i $video -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 $video.gif
+}
+
+if [ -f ~/.google_bash_aliases ]; then
+  . ~/.google_bash_aliases
+fi
